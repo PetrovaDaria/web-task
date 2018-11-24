@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="person-profile block">
+    <div class="person-info">
+        <h2 class="person-name">Индивидуальный предприниматель Швецова Мария Витальевна</h2>
+        <ul class="person-contacts inline-list">
+            <li class="person-contacts__contact inline-list__item telephone-contact">+79991234567</li>
+            <li class="person-contacts__contact inline-list__item person-contact web-contact"><a href="#" class="link">www.mary.com</a></li>
+            <li class="person-contacts__contact inline-list__item person-contact mail-contact"><a href="#" class="link">mary@tochka.ru</a></li>
+        </ul>
+        <p><a href="#" class="link">Информация о компании</a></p>
+        <p><a href="#" class="link">Показать реквизиты</a></p>
+    </div>
+    <div class="person-image">
+        <img src="profile-photo.png">
+    </div>
+</div>
+<div class="widget-payment block">
+    <ul class="payment-actions inline-list">
+        <li class="payment-actions__action payment-action_unticked inline-list__item payment-action">Заплатить</li>
+        <li class="payment-actions__action payment-action_ticked inline-list__item payment-action">Запросить платеж</li>
+    </ul>
+    <ul class="payment-options inline-list">
+        <li class="payment-options__option inline-list__item payment-option_ticked payment-option_type_any">С карты любого банка</li>
+        <li class="payment-options__option inline-list__item payment-option_unticked payment-option_type_inet-bank">Из своего интернет-банка</li>
+    </ul>
+    <form class="request-form">
+        <p>Сформируйте платежку и загрузите ее в свой банк для подписи</p>
+        <div class="payment-details reqiest-form__details">
+            <label for="payment-details__from">От кого</label>
+            <input type="text" id="payment-details__from" placeholder="ИНН или название плательщика" class="line-input">
+            <label for="payment-details__bik">БИК</label>
+            <input type="text" id="payment-details__bik" placeholder="" class="line-input">
+            <label for="payment-details__number">Номер счета</label>
+            <input type="text" id="payment-details__number" placeholder="" class="line-input">
+            <label for="payment-details__product">За что</label>
+            <input type="text" id="payment-details__product" placeholder="" class="line-input">
+            <label for="payment-details__cost">Сколько</label>
+            <input type="text" id="payment-details__cost" placeholder="" class="line-input">
+        </div>
+        <input type="submit" value="Получить файл для интернет-банка" class="payment-form__submit">
+        <p><a href="#" class="link">Очистить форму</a></p>
+    </form>
+</div>
+<div class="about-company block">
+    <h2 class="about-title">О компании Индивидуальный предприниматель Швецова Мария Витальевна</h2>
+    <p class="about-info">ИП "Швецова Мария Витальевна" проводит поездки выходного дня по заповедникам
+        Свердловской области - парк "Оленьи ручьи", "Таганай", "Зюраткуль". Компания организует туристические
+        походы на территории всего Урала.</p>
+    <div class="about-gallery">
+        <figure class="about-gallery__item">
+            <img src="olen_ry.JPG" width="300px" alt="olenii ruchii">
+            <figcaption><p>Оленьи ручьи</p> <p>2000р/2 дня</p></figcaption>
+        </figure>
+        <figure class="about-gallery__item">
+            <img src="taganai.jpg" width="300px" alt="taganai">
+            <figcaption><p>Таганай</p> <p>3000р/3 дня</p></figcaption>
+        </figure>
+        <figure class="about-gallery__item">
+            <img src="zyuratkul.jpg" width="300px" alt="zyuratkul">
+            <figcaption><p>Зюраткуль</p> <p>2500р/3 дня</p></figcaption>
+        </figure>
+    </div>
+</div>
+<div class="social-media">
+    <ul class="social-media__buttons inline-list">
+        <li class="inline-list__item"><a href="#" class="link">
+            <img src="twitter.png" width="20px">
+            <span>Твитнуть</span>
+        </a></li>
+        <li class="inline-list__item"><a href="#" class="link">
+            <img src="facebook.png" width="20px">
+            <span>Поделиться</span>
+        </a></li>
+        <li class="inline-list__item"><a href="#" class="link">
+            <img src="telegram.png" width="20px">
+            <span>Отправить</span>
+        </a></li>
+    </ul>
+</div>
+</body>
+</html>

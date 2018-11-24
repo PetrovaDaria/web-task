@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Geometria Regular';
+    src: url('Geometria.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    margin: 10px 20px;
+    padding: 20px 90px;
+    font-family: 'Geometria Regular';
+}
+
+.link
+{
+    color: #329ed9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.inline-list
+{
+    list-style: none;
+    padding: 0;
+}
+
+.inline-list__item
+{
+    display: inline;
+}
+
+.line-input
+{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.block
+{
+    border-bottom: 2px solid gray;
+    box-shadow: 2px 0 2px gray;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.person-profile
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.person-info
+{
+    max-width: 50%;
+}
+
+.person-name
+{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.person-contacts__contact
+{
+    margin-right: 10px;
+}
+
+.widget-payment
+{
+    padding-top: 20px;
+}
+
+.payment-actions
+{
+    margin-bottom: 30px;
+}
+
+.payment-action
+{
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.payment-actions__action
+{
+    margin-right: 15px;
+}
+
+.payment-action_ticked
+{
+    color: #329ed9;
+}
+
+.payment-options
+{
+    margin-bottom: 30px;
+}
+
+.payment-options__option
+{
+    margin-right: 20px;
+    margin-left: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.payment-options__option::before
+{
+    position: absolute;
+    left: -57px;
+    top: -13px;
+}
+
+.payment-option_ticked
+{
+    color: #329ed9;
+}
+
+.payment-option_type_any::before
+{
+    content: url('any-card.png');
+}
+
+.payment-option_type_inet-bank::before
+{
+    content: url('inet-bank.png');
+}
+
+.payment-form
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card
+{
+    border: 1px solid black;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 10%;
+    box-shadow: 2px 3px 6px black;
+}
+
+.card__visa-image
+{
+    width: 50px;
+    top: 30px;
+    left: 320px;
+    position: absolute;
+}
+
+.card__mastercard-image
+{
+    position: absolute;
+    width: 50px;
+    top: 20px;
+    left: 250px;
+}
+
+.card__maestro-image
+{
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    left: 180px;
+}
+
+.card__number
+{
+    margin-top: 120px;
+    margin-left: 5%;
+    width: 85%;
+}
+
+.card__date
+{
+    width: 30%;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+.card__cvc
+{
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.payment-details
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+}
+
+.payment-details__label
+{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.payment-details__input
+{
+    font-size: 20px;
+}
+
+.payment-form__submit
+{
+    font-size: 22px;
+    margin-top: 20px;
+    background: url('button-bg.png') 50% 50% no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+.reqiest-form__details input
+{
+    width: 70%;
+    font-size: 20px;
+}
+
+.about-gallery
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-gallery__item figcaption
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-media__buttons span
+{
+   vertical-align: top;
+    margin-left: 5px;
+    margin-right: 20px;
+}
