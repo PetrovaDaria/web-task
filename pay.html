@@ -23,34 +23,31 @@
 </div>
 <div class="widget-payment block">
     <ul class="payment-actions inline-list">
-        <li class="payment-actions__action payment-action_unticked inline-list__item payment-action">Заплатить</li>
-        <li class="payment-actions__action payment-action_ticked inline-list__item payment-action">Запросить платеж</li>
+        <li class="payment-actions__action payment-action_ticked inline-list__item payment-action">Заплатить</li>
+        <li class="payment-actions__action payment-action_unticked inline-list__item payment-action">Запросить платеж</li>
     </ul>
-    <ul class="payment-options inline-list">
-        <li class="payment-options__option inline-list__item payment-option_unticked payment-option_type_any">С карты любого банка</li>
-        <li class="payment-options__option inline-list__item payment-option_ticked payment-option_type_inet-bank">Из своего интернет-банка</li>
-    </ul>
-    <form class="payment-form">
-        <div class="card">
-            <img src="images/visa.png" class="card__visa-image">
-            <img src="images/mastercard.png" class="card__mastercard-image">
-            <img src="images/maestro.png" class="card__maestro-image">
-            <input type="text" class="line-input card__number" placeholder="Номер карты">
-            <input type="text" class="line-input card__date" placeholder="ММ/ГГ">
-            <input type="text" class="line-input card__cvc" placeholder="CVC">
+    <form class="request-form">
+        <p>Создайте платёжку, а Индивидуальный предприниматель Швецова Мария Витальевна
+        подпишет её у себя в интернет-банке</p>
+        <div class="payment-details reqiest-form__details">
+            <label for="payment-details__from">ИНН получателя</label>
+            <input type="text" id="payment-details__from" placeholder="ИНН или название плательщика" class="line-input">
+            <label for="payment-details__bik">БИК</label>
+            <input type="text" id="payment-details__bik" placeholder="" class="line-input">
+            <label for="payment-details__number">Номер счета</label>
+            <input type="text" id="payment-details__number" placeholder="" class="line-input">
+            <label for="payment-details__product">За что</label>
+            <input type="text" id="payment-details__product" placeholder="" class="line-input">
+            <label for="payment-details__cost">Сколько</label>
+            <input type="text" id="payment-details__cost" placeholder="" class="line-input">
+            <label for="payment-details__phone">Номер телефона</label>
+            <input type="text" id="payment-details__phone" placeholder="+7" class="line-input">
+            <label for="payment-details__mail">Эл. почта</label>
+            <input type="text" id="payment-details__mail"
+                   placeholder="Для уведомлений об оплате" class="line-input">
         </div>
-        <div class="payment-details">
-            <label for="payment-details__sum" class="payment-details__label">Сумма</label>
-            <input type="text" id="payment-details__sum" class="line-input payment-details__input"
-                   placeholder="От 1000 до 75000 рублей">
-            <label for="payment-details__comment" class="payment-details__label">Комментарий</label>
-            <input type="text" id="payment-details__comment" class="line-input payment-details__input"
-                   placeholder="До 150 символов">
-            <label for="payment-details__email" class="payment-details__label">Ваша эл. почта</label>
-            <input type="text" id="payment-details__email" class="line-input payment-details__input"
-                   placeholder="Для квитанций об оплате">
-            <input type="submit" value="Заплатить" class="payment-form__submit">
-        </div>
+        <input type="submit" value="Создать платеж" class="payment-form__submit">
+        <p><a href="#" class="link">Очистить форму</a></p>
     </form>
 </div>
 <div class="about-company block">

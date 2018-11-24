@@ -123,12 +123,12 @@ body
 
 .payment-option_type_any::before
 {
-    content: url('any-card.png');
+    content: url('images/any-card.png');
 }
 
 .payment-option_type_inet-bank::before
 {
-    content: url('inet-bank.png');
+    content: url('images/inet-bank.png');
 }
 
 .payment-form
@@ -218,7 +218,7 @@ body
 {
     font-size: 22px;
     margin-top: 20px;
-    background: url('button-bg.png') 50% 50% no-repeat;
+    background: url('images/button-bg.png') 50% 50% no-repeat;
     background-size: cover;
     border: none;
     cursor: pointer;
@@ -233,8 +233,18 @@ body
 .about-gallery
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.about-gallery__item
+{
+    width: 25%;
+}
+
+.about-gallery__item img
+{
+    width: 100%;
 }
 
 .about-gallery__item figcaption
